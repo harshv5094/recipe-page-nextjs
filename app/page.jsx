@@ -6,7 +6,7 @@ const young_serif = Young_Serif({ subsets: ['latin'], weight: ['400'] })
 
 export default function Home() {
   return (
-    <main className="grid place-items-center h-[200dvh]">
+    <main className="grid place-items-center h-[260dvh]">
       {/* Main Content */}
       <div className="bg-white h-[95%] w-[40em] rounded-2xl p-12 max-mobile:w-full max-mobile:p-8 max-mobile:h-full ">
         <Image
@@ -84,11 +84,56 @@ export default function Home() {
             </li>
             <li>
               <b>Add fillings(optional)</b>: When the eggs begin to set at the
-              edges, but are still slightly runny
+              edges, but are still slightly runny in the middle, sprinkle your
+              chosen fillings over one half of the omlette.
+            </li>
+            <li>
+              <b>Fold and Serve</b>: As the omlette continues to cook, carefully
+              lift one edge and fold it over the fillings. Let it cook for
+              another minute, then slide it onto a plate.
+            </li>
+            <li>
+              <b>Enjoy</b>: Serve hot, with additional salt and pepper if
+              needed.
             </li>
           </ul>
         </div>
         <hr />
+
+        <div className="my-8">
+          <h1
+            className={`${young_serif.className} text-2xl text-nutmeg font-bold`}
+          >
+            Nutrition
+          </h1>
+          <p className="mt-3">
+            The table below shows nutritional values per serving without the
+            additional fillings.
+          </p>
+
+          <div className="m-10">
+            <table className="w-full border-b-light-grey mt-5 text-left">
+              <tbody>
+                <tr>
+                  <th className="text-light-grey font-bold">Calories</th>
+                  <td className="text-nutmeg font-bold">277kcal</td>
+                </tr>
+                <tr>
+                  <th className="text-light-grey font-bold">Carbs</th>
+                  <td className="text-nutmeg font-bold">0g</td>
+                </tr>
+                <tr>
+                  <th className="text-light-grey font-bold">Protein</th>
+                  <td className="text-nutmeg font-bold">20g</td>
+                </tr>
+                <tr>
+                  <th className="text-light-grey font-bold">Fat</th>
+                  <td className="text-nutmeg font-bold">{'22g'}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </main>
   )
